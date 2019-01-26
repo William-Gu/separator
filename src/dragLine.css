@@ -1,0 +1,21 @@
+.vdragWrap{
+	display: none;
+	position:absolute; top: 0; left: 0;z-index: 110;
+	width: 100%;height: 100%;cursor: ew-resize;
+}
+.dragLine{
+  position: absolute; top: 0; left: 310px; z-index: 101;
+  width:5px;
+	height:100%;
+}
+.dragLine .vdragLine{
+  position: absolute; top: 0px; left: -5px; z-index: 103;
+  width: 10px;
+  height:100%;
+  cursor: ew-resize;
+}
+.dragLine .vdragLine-dashed{
+  position: absolute; top: 0px; left: 1px; z-index: 102;
+  width: 3px;
+  height:100%;
+}
