@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="./src/dragLine.css">
   <style lang="">
     *{margin:0;padding:0;}
-    html,body,.wrap{
+    html,
+    body,
+    .wrap{
       width: 100%;
       height: 100%;
     }
@@ -19,12 +21,12 @@
       height:100%;
     }
     .left{
-      width:200px;
+      width:310px;
       height:100%;
       background: pink;
     }
     .right{
-      left:200px;
+      left: 310px;
       right:0;
       height:100%;
       background: #66b;
@@ -44,11 +46,18 @@
   </div>
   <script src="./src/dragLine.js"></script>
   <script>
+  /*
+    dragLine
+  */
   dragLine({
     initial: 310,
     min: 310,
     max: 570,
-    cb: function(){console.log(123);
+    cb: function(data){
+      var left = document.querySelector('.left')
+          left.style.width = data + "px";
+      var right = document.querySelector('.right')
+          right.style.left = data + "px";
     }
   });
   </script>

@@ -74,10 +74,6 @@ function dragLine(obj) {
       vDomLine.draging = false;
     }
   })
-
-
-
-
   // lineIn.addEventListener('dragstart',function(e){})
   // document.addEventListener('dragover',function(e){})
   // document.addEventListener('dragend',function(e){})
