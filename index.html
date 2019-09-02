@@ -21,12 +21,12 @@
       height:100%;
     }
     .left{
-      width:310px;
+      width:200px;
       height:100%;
       background: pink;
     }
     .right{
-      left: 310px;
+      left: 200px;
       right:0;
       height:100%;
       background: #66b;
@@ -34,14 +34,8 @@
   </style>
 </head>
 <body>
-  <div class="wrap">
+  <div class="wrap" id="separator-dom">
     <div class="left">left</div>
-      <!-- drag -->
-			<div id="vdragWrap" class="vdragWrap"></div>
-      <div id="dragLine" class='dragLine'>
-        <div id='vdragLine' class="vdragLine"></div>
-        <div id='vdragLine-dashed' class="vdragLine-dashed"></div>
-      </div>
     <div class="right">right</div>
   </div>
   <script src="./src/dragLine.js"></script>
@@ -50,8 +44,9 @@
     dragLine
   */
   dragLine({
-    initial: 310,
-    min: 310,
+    el: "separator-dom",
+    initial: 200,
+    min: 200,
     max: 570,
     cb: function(data){
       var left = document.querySelector('.left')
